@@ -1,0 +1,33 @@
+{
+  "name": "argvs",
+  "version": "1.0.1",
+  "description": "parse command line arguments",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test --env=development conf=dev mode:prod --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fulicat/argvs.git"
+  },
+  "keywords": [
+    "argvs",
+    "command line argvs",
+    "node argvs",
+    "arguments",
+    "prameters",
+    "parser",
+    "webpack",
+    "react",
+    "vue"
+  ],
+  "author": "fulicat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fulicat/argvs/issues"
+  },
+  "homepage": "https://github.com/fulicat/argvs#readme",
+  "devDependencies": {
+    
+  }
+}
