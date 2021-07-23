@@ -1,13 +1,10 @@
 /*
-* test.js (argvs)
-* @Author: Jack.Chan (971546@qq.com)
-* @Date:   2019-09-20 14:06:23
+* @Author: Jack.Chan
+* @Date:   2021-07-23 15:52:28
 * @Last Modified by:   Jack.Chan
-* @Last Modified time: 2019-09-20 20:24:26
-* @website http://fulicat.com
-* @version v1.0.0
+* @Last Modified time: 2021-07-23 16:00:58
 */
 
-const { argv } = require('./index');
+const { argvs } = require('./index');
 console.log('\nargvs:\n')
-console.log(argv)
+console.log(argvs)

@@ -1,10 +1,10 @@
 {
   "name": "argvs",
-  "version": "1.0.1",
-  "description": "parse command line arguments",
+  "version": "1.2.0",
+  "description": "parse command line arguments of process.argv",
   "main": "index.js",
   "scripts": {
-    "test": "node test --env=development conf=dev mode:prod --open"
+    "test": "node test -x 3 4 -y 4 -n556 -abc --beep=boop foo bar baz --test -t ab=dc -X 0.25 -Y 0.7 -q a b c"
   },
   "repository": {
     "type": "git",
@@ -13,7 +13,8 @@
   "keywords": [
     "argvs",
     "command line argvs",
-    "node argvs",
+    "node arguments",
+    "process.argv",
     "arguments",
     "prameters",
     "parser",

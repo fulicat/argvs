@@ -1,7 +1,7 @@
 
 # argvs
 
-> parse process.argv.
+> parse command line arguments of process.argv
 
 ## Installation
 
@@ -9,58 +9,84 @@
 
 `argvs` is available on [npm](http://npmjs.org) or [yarn](https://yarnpkg.com).
 
-    $ npm install argvs --save-dev
+```bash
+$ yarn add argvs --dev
+or
+$ npm install argvs --save-dev
+```
 
-    $ yarn add argvs --dev
+
 
 ## Usage
 
 ### test.js
 ```js
-  const { argv } = require('argvs');
-  console.log('\nargvs:\n')
-  console.log(argv)
+const { argv } = require('argvs');
+console.log('\nargvs:\n')
+console.log(argv)
 ```
 
 ### run
 
-```js
-  $ node test.js --env=development conf=dev mode:prod --open
+```bash
+$ node test.js -x 3 4 -y 4 -n556 -abc --beep=boop foo bar baz --test -t ab=dc -X 0.25 -Y 0.7 -q a b c
 ```
 
 ### result
 
 ```js
-  {
-    env: 'development',
-    conf: 'dev',
-    mode: 'prod',
-    open: true
-  }
+{
+  _: [ 'foo', 'bar', 'baz' ],
+  beep: 'boop',
+  test: true,
+  ab: 'dc',
+  x: [ 3, 4 ],
+  y: 4,
+  n: [ 5, 5, 6 ],
+  a: true,
+  b: true,
+  c: true,
+  t: true,
+  X: 0.25,
+  Y: 0.7,
+  q: [ 'a', 'b', 'c' ]
+}
 ```
 
 
-## Test
 
-```js
-    $ npm run test
-    $ yarn test
-```
+--------------------------------------------------------
+
+
+
+
 
 
 ## package.json
 
-```js
-  {
+```json
+{
     "name": "argvs",
-    "version": "1.0.0",
-    "description": "parse command line arguments",
+    "version": "1.2.0",
+    "description": "parse command line arguments of process.argv",
     "main": "index.js",
     "scripts": {
-      "test": "node test --env=development conf=dev mode:prod --open"
+      "test": "node test -x 3 4 -y 4 -n556 -abc --beep=boop foo bar baz --test -t ab=dc -X 0.25 -Y 0.7 -q a b c"
     }
-  }
+}
 ```
+
+
+
+## Test
+
+```bash
+$ yarn test
+or
+$ npm run test
+```
+
+
 
 
 
@@ -69,7 +95,7 @@
 
 (The MIT License)
 
-Copyright (c) 2019 Jack.Chan <fulicat@qq.com> (http://fulicat.com)
+Copyright (c) 2019~2021 Jack.Chan <fulicat@qq.com> (http://fulicat.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
