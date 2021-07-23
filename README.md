@@ -1,7 +1,7 @@
 
 # argvs
 
-> parse command line arguments.
+> parse process.argv.
 
 ## Installation
 
@@ -48,7 +48,7 @@
 ```
 
 
-## for package.json
+## package.json
 
 ```js
   {
@@ -69,7 +69,7 @@
 
 (The MIT License)
 
-Copyright (c) 2013 Jake Luer <jake@alogicalparadox.com> (http://alogicalparadox.com)
+Copyright (c) 2019 Jack.Chan <fulicat@qq.com> (http://fulicat.com)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
